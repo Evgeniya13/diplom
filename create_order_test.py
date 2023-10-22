@@ -1,10 +1,10 @@
+# Евгения Ширманова, 9я когорта - Финальный проект. Инженер по тестированию
 import sender_stand_request
 import data
 
 track = sender_stand_request.post_create_new_order(data.order_body).json()["track"]
 def get_order_body():
     current_body = data.order_body
-    print(current_body)
     return current_body
 
 # Создание заказа и проверка
