@@ -1,5 +1,5 @@
 1)
-SELECT distinct c.login, count (o.inDelivery)
+SELECT distinct c.login, count (*) as orderInDelivery
 FROM couriers AS c
 INNER JOIN orders AS o ON c.id = o.courierId
 WHERE o.inDelivery = true
